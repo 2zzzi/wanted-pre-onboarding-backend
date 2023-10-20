@@ -62,7 +62,6 @@ public class EmployeeService {
         employee.setTechnology(employeeUpdateRequest.getTechnology());
     }
 
-    @Transactional
     public void deleteEmployee(Long id){
         employeeRepository.deleteById(id);
     }
